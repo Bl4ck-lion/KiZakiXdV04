@@ -12,6 +12,7 @@ const { JSDOM } = require('jsdom')
 const thiccysapi = require('textmaker-thiccy')
 const stalker = require("xzons-api")
 const hx = require("hxz-api")
+const { instagramdl, instagramdlv2, instagramdlv3, instagramdlv4 } = require("@bochilteam/scraper") 
 const speed = require('performance-now')
 const { performance } = require('perf_hooks')
 const { TiktokDownloader } = require('./lib/tiktokdl') 
@@ -3302,6 +3303,12 @@ m.reply(String(err))
 }
 }
 break
+case 'igreels' :{ 
+	const results = await instagramdl(args[0])
+        .catch(async _ => await instagramdlv2(args[0]))
+        .catch(async _ => await instagramdlv3(args[0]))
+        .catch(async _ => await instagramdlv4(args[0]))
+    for (const { url } of results) await zaky.sendFile(m.chat, url, 'instagram.mp4', `ðŸ”— *Url:* ${url}`, m)
 case 'ig': {
 if (args[0] === "mp4") {
 zaki.sendMessage(from, {video:{url:args[1]}, caption:'Done!', mimetype:'video/mp4'}, {quoted:m})
