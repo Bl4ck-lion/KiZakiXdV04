@@ -8,7 +8,7 @@ Jika Dirimu Pernah Menyesalinya Lantas Kenapa Kamu Mengulanginnya
 >
 </div>
 <p align="center">
-  <a href="https://github.com/KiZakiXD"><img title="Si Paling" src="https://img.shields.io/badge/Author-KiZakiXD-red.svg?style=for-the-badge&logo=github" /></a>
+  <a href="https://github.com/LeonGanz"><img title="Si Paling" src="https://img.shields.io/badge/Author-LeomGanz-red.svg?style=for-the-badge&logo=github" /></a>
   <h4 align="center">
   <a href="https://wa.me/6285878313791"> No Enc? </a>
 </h4>
