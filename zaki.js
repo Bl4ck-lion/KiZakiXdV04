@@ -3978,7 +3978,7 @@ let message = await prepareWAMessageMedia({ image: fs.readFileSync('./media/menu
                         }
                     }
                 }), { userJid: m.chat, quoted: m })
-                zaki.relayMessage(m.chat, template.message, { messageId: template.key.id })*/
+                zaki.relayMessage(m.chat, template.message, { messageId: template.key.id })
 }                
 break
 case 'owner': case 'creator': {
