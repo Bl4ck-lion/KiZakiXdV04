@@ -3897,32 +3897,18 @@ case '?': case 'menu': case 'help':
 
 txt = ` _*Hi Kak ${pushname} ${ucapanWaktu} 👋.*_
 
-
-
-*Statistic* :
-
+∆*Statistic* :
  • Upload : ${cBandwidth.upload}
-
  • Download : ${cBandwidth.download}
 
-
-
-*User Info* :
-
+∆*User Info* :
  • Username : ${pushname}
-
  • Balance : ${getMonay(m.sender)}
-
  • Limit : ∞
-
  • Status : Free User
 
-
-
-*Bot Info* :
-
+∆*Bot Info* :
  • Author : ${author}
-
  • Botname : ${botname}
  • Prefix : ${Prefix}
  • Speed : ${latensi.toFixed(4)} _Second_
@@ -3934,7 +3920,6 @@ txt = ` _*Hi Kak ${pushname} ${ucapanWaktu} 👋.*_
 `
 
 const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({ templateMessage: { hydratedTemplate: { hydratedContentText: txt.trim(), locationMessage: { jpegThumbnail: fs.readFileSync('./media/menu.jpg') }, hydratedFooterText: `${footer1}`, hydratedButtons: [{ urlButton: { displayText: 'Group Official', url: 'https://tinyurl.com/ya4dpmdv'} }, { quickReplyButton: { displayText: 'Owner', id: 'owner', } }, { quickReplyButton: { displayText: 'Donate', id: 'donate', } }, { quickReplyButton: { displayText: 'List Menu', id: 'allmenu', } }] } } }), { userJid: m.sender, quoted: m }); //conn.reply(m.chat, text.trim(), m) 
-
   zaki.relayMessage( m.chat, template.message, { messageId: template.key.id } )
 
 break
