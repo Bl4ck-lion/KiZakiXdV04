@@ -2360,9 +2360,9 @@ case 'webtonsearch': case 'webtoon':
                     reply(mess.error)
                 })
             break
-           case 'husbu': case 'shinobu': case 'megumin': case 'waifus': case 'nekos': case 'trap': case 'blowjob':
+           case 'husbu':case 'shinobu':case 'megumin': case 'waifus': case 'nekos': case 'trap': case 'blowjob':
 					reply(mess.wait)
-					axios.get(`https://api.waifu.pics/nsfw/${command}`)
+					axios.get(`https://api.waifu.pics/sfw/${command}`)
 					.then(({data}) => {
 					zaki.sendImage(m.chat, data.url, mess.success, m)
 					})
@@ -3879,7 +3879,7 @@ break
                   }
                   }
                   break
-case 'cry':case 'kill':case 'hug':case 'pat':case 'lick':case 'kiss':case 'bite':case 'yeet':case 'neko':case 'bully':case 'bonk':case 'wink':case 'poke':case 'nom':case 'slap':case 'smile':case 'wave':case 'awoo':case 'blush':case 'smug':case 'glomp':case 'happy':case 'dance':case 'cringe':case 'cuddle':case 'highfive':case 'shinobu':case 'megumin':case 'handhold':
+case 'cry':case 'kill':case 'hug':case 'pat':case 'lick':case 'kiss':case 'bite':case 'yeet':case 'bully':case 'bonk':case 'wink':case 'poke':case 'nom':case 'slap':case 'smile':case 'wave':case 'awoo':case 'blush':case 'smug':case 'glomp':case 'happy':case 'dance':case 'cringe':case 'cuddle':case 'highfive':case 'shinobu':case 'megumin':case 'handhold':
 					reply(mess.wait)
 					axios.get(`https://api.waifu.pics/sfw/${command}`)
 					.then(({data}) => {
@@ -3911,32 +3911,18 @@ case '?': case 'menu': case 'help':
 
 txt = ` _*Hi Kak ${pushname} ${ucapanWaktu} 👋.*_
 
-
-
 *Statistic* :
-
  • Upload : ${cBandwidth.upload}
-
  • Download : ${cBandwidth.download}
 
-
-
 *User Info* :
-
  • Username : ${pushname}
-
  • Balance : ${getMonay(m.sender)}
-
  • Limit : ∞
-
  • Status : Free User
 
-
-
 *Bot Info* :
-
  • Author : ${author}
-
  • Botname : ${botname}
  • Prefix : ${Prefix}
  • Speed : ${latensi.toFixed(4)} _Second_
