@@ -10,34 +10,34 @@ global.autoReadAll = true
 //Silahkan sesuaikan sendiri ya
 
 // Ganti Sewajarnya
-global.owner = ['6285878313791']
-global.pengguna = 'KiZakiXD'
+global.owner = ['6285608625102']
+global.pengguna = 'Rama'
 global.premium = []
-global.author = 'KiZakiXD'
-global.pemilik = ['6285878313791'] 
-global.ownernomer = '6285878313791'
-global.ownername = 'KiZakiXD'
-global.botname = 'Chitanda - MD'
+global.author = 'Rama Agung Supriyadi'
+global.pemilik = ['6285608625102'] 
+global.ownernomer = '6285608625102'
+global.ownername = 'Rama Agung Supriyadi'
+global.botname = 'Yui - Chan'
 global.tengah = "									"
 global.Prefix = 'Multi Prefix'
-global.meki = '6285878313791'
-global.footer = '𝘊 𝘩 𝘪 𝘵 𝘢 𝘯 𝘥 𝘢 - 𝘔 𝘋'
+global.meki = 'Rama Agung Supriyadi'
+global.footer = 'Yui - Chan By Rama Agung Supriyadi'
 //Isi Sesuai Namalu Buat Tambah Tqtq
-global.namalu = 'Namalu' //Ubah nama kalian buat nambahin di tqtq bot
+global.namalu = 'Rama Agung Supriyadi' //Ubah nama kalian buat nambahin di tqtq bot
 global.footer1 = 'Jangan Spam Bot.'
 global.footer2 = 'Jika Menemukan Bug Lapor Ke Owner.'
-global.yt = 'https://www.youtube.com/channel/UCHdipvk52k43KsPRenGpD0w' //Jika tidak ada yt jangan diubah buat promosi owner xixixixi
-global.ig = 'https://instagram.com/iamkizakixd'
-global.gc = 'https://chat.whatsapp.com/IJ5ull4HXaY647D6ACw4kj' //join ya kadang kadang pada eval bot disitu lumayan dapet fitur baru wkwkwk
+global.yt = 'https://www.youtube.com/c/LeonGanz' //Jika tidak ada yt jangan diubah buat promosi owner xixixixi
+global.ig = 'https://instagram.com/leonvx._'
+global.gc = 'https://tinyurl.com/ya4dpmdv' //join ya kadang kadang pada eval bot disitu lumayan dapet fitur baru wkwkwk
 global.dana = '00000'
 global.gopay = '0000'
-global.wame = 'wa.me/6285878313791'
-global.email = 'helloiamkizakixd@gmail.com'
+global.wame = 'wa.me/6285608625102'
+global.email = 'ramaagung050307@gmail.com'
 global.region = 'Indonesia'
-global.link = 'nekopoi.care'
-global.sc = 'https://bit.ly/SubscribeFLOB'
-global.packname = '"{\nAuthor: KiZakiXD"\n"Bot Number: 6285848376737"\n"Bot Name: Chitanda - MD"\n"Instagram: @iamkizakixd"\n}' 
-global.author = '' 
+global.link = 'leonganz.eu.org'
+global.sc = 'https://youtube.com/c/LeonGanz'
+global.packname = '"{\nAuthor: KiZakiXD"\n"Bot Number: 62895410472842"\n"Bot Name: Yui - Chan"\n"Instagram: @leonvx._"\n}' 
+global.author = 'Rama Agung Supriyadi' 
 global.sessionName = 'session'
 global.prefa = ['#','!','/','']
 global.sp = '❑ ' 
@@ -60,7 +60,7 @@ global.mess = {
 }
     global.limitawal = {
     premium: "Unlimited",
-    free: 30,
+    free: 10,
     monayawal: 1000
 }
    global.rpg = {
@@ -144,6 +144,7 @@ global.ccomannya = `
   「 *Downloader Menu* 」
  » tiktok [url]
  » instagram [url]
+ » ytmp4/ytmp3 [url]
  » twitter [url]
  » facebook [url]
  » igstory [query]
