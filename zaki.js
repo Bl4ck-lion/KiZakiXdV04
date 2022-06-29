@@ -3938,12 +3938,12 @@ zaki.sendMessage(m.chat, templateMessage)
 // MODEL MENU SEKARANG : LOC \\
 
 //━━━━━━━━━━━━━━━[ MENU LOC ]━━━━━━━━━━━━━━━\\
-/*const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({ templateMessage: { hydratedTemplate: { hydratedContentText: `${ccomannya}`, locationMessage: { jpegThumbnail: fs.readFileSync('./media/allmenu.jpg') }, hydratedFooterText: `${footer}`, hydratedButtons: [{ urlButton: { displayText: 'Group Official', url: 'https://tinyurl.com/ya4dpmdv'} }] } } }), { userJid: m.sender, quoted: m }); //conn.reply(m.chat, text.trim(), m) 
-  zaki.relayMessage( m.chat, template.message, { messageId: template.key.id } )*/
+const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({ templateMessage: { hydratedTemplate: { hydratedContentText: `${ccomannya}`, locationMessage: { jpegThumbnail: fs.readFileSync('./media/allmenu.jpg') }, hydratedFooterText: `${footer}`, hydratedButtons: [{ urlButton: { displayText: 'Group Official', url: 'https://tinyurl.com/ya4dpmdv'} }] } } }), { userJid: m.sender, quoted: m }); //conn.reply(m.chat, text.trim(), m) 
+  zaki.relayMessage( m.chat, template.message, { messageId: template.key.id } )
 
   
 //━━━━━━━━━━━━━━━[ MENU IMG ]━━━━━━━━━━━━━━━\\
-let message = await prepareWAMessageMedia({ image: fs.readFileSync('./media/menu.jpg') }, { upload: zaki.waUploadToServer })
+//let message = await prepareWAMessageMedia({ image: fs.readFileSync('./media/menu.jpg') }, { upload: zaki.waUploadToServer })
                 const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                     templateMessage: {
                         hydratedTemplate: {
@@ -3978,7 +3978,7 @@ let message = await prepareWAMessageMedia({ image: fs.readFileSync('./media/menu
                         }
                     }
                 }), { userJid: m.chat, quoted: m })
-                zaki.relayMessage(m.chat, template.message, { messageId: template.key.id })
+                zaki.relayMessage(m.chat, template.message, { messageId: template.key.id })*/
 }                
 break
 case 'owner': case 'creator': {
