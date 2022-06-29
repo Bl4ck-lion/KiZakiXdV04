@@ -3893,94 +3893,94 @@ case 'cry':case 'kill':case 'hug':case 'pat':case 'lick':case 'kiss':case 'bite'
 					zaki.sendImage(m.chat, data.url, mess.success, m)
 					})
 					break
-case '?': case 'menu': case 'help':
-txt = ` _*Hi Kak ${pushname} ${ucapanWaktu} 👋.*_
-
-*Statistic* :
- • Upload : ${cBandwidth.upload}
- • Download : ${cBandwidth.download}
-
-*User Info* :
- • Username : ${pushname}
- • Balance : ${getMonay(m.sender)}
- • Limit : ∞
- • Status : Free User
-
-*Bot Info* :
- • Author : ${author}
- • Botname : ${botname}
- • Prefix : ${Prefix}
- • Speed : ${latensi.toFixed(4)} _Second_
- • Uptime Bot : ${runtime(process.uptime())}
- • Uptime Os : ${runtime(os.uptime())}
- • Date Server :  ${moment.tz('Asia/Jakarta').format('DD/MM/YY')}
- • Time Sever : ${moment.tz('Asia/Jakarta').format('HH:mm:ss')}
-`
-const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({ templateMessage: { hydratedTemplate: { hydratedContentText: txt.trim(), locationMessage: { jpegThumbnail: fs.readFileSync('./media/menu.jpg') }, hydratedFooterText: `${footer1}`, hydratedButtons: [{ urlButton: { displayText: 'Group Official', url: 'https://tinyurl.com/ya4dpmdv'} }, { quickReplyButton: { displayText: 'Owner', id: 'owner', } }, { quickReplyButton: { displayText: 'Donate', id: 'donate', } }, { quickReplyButton: { displayText: 'List Menu', id: 'allmenu', } }] } } }), { userJid: m.sender, quoted: m }); //conn.reply(m.chat, text.trim(), m) 
-  zaki.relayMessage( m.chat, template.message, { messageId: template.key.id } )
-break
-case 'command': case 'allmenu': case 'listmenu': {
-var butonnya =
-[{ urlButton: { displayText: 'Group Official', url: 'https://tinyurl.com/ya4dpmdv'} }, 
-{ quickReplyButton: { displayText: 'Owner', id: 'owner', } }, 
-{ quickReplyButton: { displayText: 'Sewa Bot', id: 'sewabot', } }]
-/*const templateMessage = {
-video:fs.readFileSync("./media/allmenu.mp4"),
-gifPlayback:true,
-caption: ccomannnya,
-footer: footer,
-templateButtons: butonnya
-}
-zaki.sendMessage(m.chat, templateMessage)
-*/
-  // -----[ Note : Untuk Menggunakan Menu Yang Kalian Mau Cukup Hapus /* sampai */ & Jika Sudah Dihapus Maka Tambah /* xxxxxx */ Agar Tidak Terdetek ]-----
-
-// MODEL MENU SEKARANG : LOC \\
-
-//━━━━━━━━━━━━━━━[ MENU LOC ]━━━━━━━━━━━━━━━\\
-const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({ templateMessage: { hydratedTemplate: { hydratedContentText: `${ccomannya}`, locationMessage: { jpegThumbnail: fs.readFileSync('./media/allmenu.jpg') }, hydratedFooterText: `${footer}`, hydratedButtons: [{ urlButton: { displayText: 'Group Official', url: 'https://tinyurl.com/ya4dpmdv'} }] } } }), { userJid: m.sender, quoted: m }); //conn.reply(m.chat, text.trim(), m) 
-  zaki.relayMessage( m.chat, template.message, { messageId: template.key.id } )
-
-  
-//━━━━━━━━━━━━━━━[ MENU IMG ]━━━━━━━━━━━━━━━\\
-//let message = await prepareWAMessageMedia({ image: fs.readFileSync('./media/menu.jpg') }, { upload: zaki.waUploadToServer })
-                const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
-                    templateMessage: {
-                        hydratedTemplate: {
-                            imageMessage: message.imageMessage,
-                            hydratedContentText: ccomannnya,
-                            hydratedButtons: [{
-                                urlButton: {
-                                    displayText: 'Instagram',
-                                    url: 'https://instagram.com/leonvx._'
-                                }
-                            }, {
-                                callButton: {
-                                    displayText: 'Owner Number',
-                                    phoneNumber: '+62 856-0862-5102'
-                                }
-                            }, {
-                                quickReplyButton: {
-                                    displayText: 'Speed',
-                                    id: 'ping'
-                                }
-                            }, {
-                                quickReplyButton: {
-                                    displayText: 'Script',
-                                    id: 'sc'
-                                }  
-                            }, {
-                                quickReplyButton: {
-                                    displayText: 'Owner',
-                                    id: 'owner'
-                                }
-                            }]
-                        }
-                    }
-                }), { userJid: m.chat, quoted: m })
-                zaki.relayMessage(m.chat, template.message, { messageId: template.key.id })*/
-}                
-break
+case '?': case 'menu': case 'help':
+txt = ` _*Hi Kak ${pushname} ${ucapanWaktu} 👋.*_
+
+*Statistic* :
+ • Upload : ${cBandwidth.upload}
+ • Download : ${cBandwidth.download}
+
+*User Info* :
+ • Username : ${pushname}
+ • Balance : ${getMonay(m.sender)}
+ • Limit : ∞
+ • Status : Free User
+
+*Bot Info* :
+ • Author : ${author}
+ • Botname : ${botname}
+ • Prefix : ${Prefix}
+ • Speed : ${latensi.toFixed(4)} _Second_
+ • Uptime Bot : ${runtime(process.uptime())}
+ • Uptime Os : ${runtime(os.uptime())}
+ • Date Server :  ${moment.tz('Asia/Jakarta').format('DD/MM/YY')}
+ • Time Sever : ${moment.tz('Asia/Jakarta').format('HH:mm:ss')}
+`
+const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({ templateMessage: { hydratedTemplate: { hydratedContentText: txt.trim(), locationMessage: { jpegThumbnail: fs.readFileSync('./media/menu.jpg') }, hydratedFooterText: `${footer1}`, hydratedButtons: [{ urlButton: { displayText: 'Group Official', url: 'https://chat.whatsapp.com/IJ5ull4HXaY647D6ACw4kj'} }, { quickReplyButton: { displayText: 'Owner', id: 'owner', } }, { quickReplyButton: { displayText: 'Donate', id: 'donate', } }, { quickReplyButton: { displayText: 'List Menu', id: 'allmenu', } }] } } }), { userJid: m.sender, quoted: m }); //conn.reply(m.chat, text.trim(), m) 
+  zaki.relayMessage( m.chat, template.message, { messageId: template.key.id } )
+break
+case 'command': case 'allmenu': case 'listmenu': {
+var butonnya =
+[{ urlButton: { displayText: 'Group Official', url: 'https://chat.whatsapp.com/IJ5ull4HXaY647D6ACw4kj'} }, 
+{ quickReplyButton: { displayText: 'Owner', id: 'owner', } }, 
+{ quickReplyButton: { displayText: 'Sewa Bot', id: 'sewabot', } }]
+/*const templateMessage = {
+video:fs.readFileSync("./media/allmenu.mp4"),
+gifPlayback:true,
+caption: ccomannnya,
+footer: footer,
+templateButtons: butonnya
+}
+zaki.sendMessage(m.chat, templateMessage)
+*/
+  // -----[ Note : Untuk Menggunakan Menu Yang Kalian Mau Cukup Hapus /* sampai */ & Jika Sudah Dihapus Maka Tambah /* xxxxxx */ Agar Tidak Terdetek ]-----
+
+// MODEL MENU SEKARANG : LOC \\
+
+//━━━━━━━━━━━━━━━[ MENU LOC ]━━━━━━━━━━━━━━━\\
+const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({ templateMessage: { hydratedTemplate: { hydratedContentText: `${ccomannya}`, locationMessage: { jpegThumbnail: fs.readFileSync('./media/allmenu.jpg') }, hydratedFooterText: `${footer}`, hydratedButtons: [{ urlButton: { displayText: 'Group Official', url: 'https://chat.whatsapp.com/IJ5ull4HXaY647D6ACw4kj'} }] } } }), { userJid: m.sender, quoted: m }); //conn.reply(m.chat, text.trim(), m) 
+  zaki.relayMessage( m.chat, template.message, { messageId: template.key.id } )
+
+  
+//━━━━━━━━━━━━━━━[ MENU IMG ]━━━━━━━━━━━━━━━\\
+/*let message = await prepareWAMessageMedia({ image: fs.readFileSync('./media/menu.jpg') }, { upload: zaki.waUploadToServer })
+                const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+                    templateMessage: {
+                        hydratedTemplate: {
+                            imageMessage: message.imageMessage,
+                            hydratedContentText: ccomannnya,
+                            hydratedButtons: [{
+                                urlButton: {
+                                    displayText: 'Instagram',
+                                    url: 'https://instagram.com/iamkizakixd'
+                                }
+                            }, {
+                                callButton: {
+                                    displayText: 'Owner Number',
+                                    phoneNumber: '+62 882-9202-4190'
+                                }
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'Speed',
+                                    id: 'ping'
+                                }
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'Script',
+                                    id: 'sc'
+                                }  
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'Owner',
+                                    id: 'owner'
+                                }
+                            }]
+                        }
+                    }
+                }), { userJid: m.chat, quoted: m })
+                zaki.relayMessage(m.chat, template.message, { messageId: template.key.id })*/
+}                
+break
 case 'owner': case 'creator': {
   zaki.sendContact(m.chat, global.owner, m)
   }
