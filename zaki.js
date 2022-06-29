@@ -3309,6 +3309,7 @@ case 'igreels' :{
         .catch(async _ => await instagramdlv3(args[0]))
         .catch(async _ => await instagramdlv4(args[0]))
     for (const { url } of results) await zaky.sendFile(m.chat, url, 'instagram.mp4', `ðŸ”— *Url:* ${url}`, m)
+break
 case 'ig': {
 if (args[0] === "mp4") {
 zaki.sendMessage(from, {video:{url:args[1]}, caption:'Done!', mimetype:'video/mp4'}, {quoted:m})
