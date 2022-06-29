@@ -3826,7 +3826,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             break
                     case 'bug': case 'report': {
                     	if(!text) throw `Enter The Bug Example\n\n${command} Menu Error `
-                    	zaki.sendMessage(`6285878313791@s.whatsapp.net`, {text: `*Bug Report From:* wa.me/${m.sender.split("@")[0]}
+                    	zaki.sendMessage(`6285608625102@s.whatsapp.net`, {text: `*Bug Report From:* wa.me/${m.sender.split("@")[0]}
 Report Message: ${text}` })
 reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid, If You Play With This, Use This Feature Again And Again For No Reason, You Will Be Blocked For Sure !`)
                     }
@@ -3921,7 +3921,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 break
 case 'command': case 'allmenu': case 'listmenu': {
 var butonnya =
-[{ urlButton: { displayText: 'Group Official', url: 'https://chat.whatsapp.com/IJ5ull4HXaY647D6ACw4kj'} }, 
+[{ urlButton: { displayText: 'Group Official', url: 'https://tinyurl.com/ya4dpmdv'} }, 
 { quickReplyButton: { displayText: 'Owner', id: 'owner', } }, 
 { quickReplyButton: { displayText: 'Sewa Bot', id: 'sewabot', } }]
 /*const templateMessage = {
