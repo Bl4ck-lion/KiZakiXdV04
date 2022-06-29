@@ -3886,9 +3886,23 @@ case 'cry':case 'kill':case 'hug':case 'pat':case 'lick':case 'kiss':case 'bite'
 						zaki.sendImageAsSticker(m.chat, data.url, m, { packname: global.packname, author: global.author })
 					})
 					break
-				case 'waifu': case 'loli': 
+				case 'waifu':
 					reply(mess.wait)
 					axios.get(`https://api.waifu.pics/sfw/waifu`)
+					.then(({data}) => {
+					zaki.sendImage(m.chat, data.url, mess.success, m)
+					})
+					break
+					case 'loli': 
+					reply(mess.wait)
+					axios.get(`https://melcanz.com/loli?&apikey=melcantik`)
+					.then(({data}) => {
+					zaki.sendImage(m.chat, data.url, mess.success, m)
+					})
+					break
+					case 'neko':
+					reply(mess.wait)
+					axios.get(`https://api.waifu.pics/sfw/neko`)
 					.then(({data}) => {
 					zaki.sendImage(m.chat, data.url, mess.success, m)
 					})
@@ -3897,18 +3911,32 @@ case '?': case 'menu': case 'help':
 
 txt = ` _*Hi Kak ${pushname} ${ucapanWaktu} 👋.*_
 
-∆*Statistic* :
+
+
+*Statistic* :
+
  • Upload : ${cBandwidth.upload}
+
  • Download : ${cBandwidth.download}
 
-∆*User Info* :
+
+
+*User Info* :
+
  • Username : ${pushname}
+
  • Balance : ${getMonay(m.sender)}
+
  • Limit : ∞
+
  • Status : Free User
 
-∆*Bot Info* :
+
+
+*Bot Info* :
+
  • Author : ${author}
+
  • Botname : ${botname}
  • Prefix : ${Prefix}
  • Speed : ${latensi.toFixed(4)} _Second_
@@ -3920,6 +3948,7 @@ txt = ` _*Hi Kak ${pushname} ${ucapanWaktu} 👋.*_
 `
 
 const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({ templateMessage: { hydratedTemplate: { hydratedContentText: txt.trim(), locationMessage: { jpegThumbnail: fs.readFileSync('./media/menu.jpg') }, hydratedFooterText: `${footer1}`, hydratedButtons: [{ urlButton: { displayText: 'Group Official', url: 'https://tinyurl.com/ya4dpmdv'} }, { quickReplyButton: { displayText: 'Owner', id: 'owner', } }, { quickReplyButton: { displayText: 'Donate', id: 'donate', } }, { quickReplyButton: { displayText: 'List Menu', id: 'allmenu', } }] } } }), { userJid: m.sender, quoted: m }); //conn.reply(m.chat, text.trim(), m) 
+
   zaki.relayMessage( m.chat, template.message, { messageId: template.key.id } )
 
 break
